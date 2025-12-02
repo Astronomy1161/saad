@@ -1,0 +1,83 @@
+body, html {
+    margin: 0; padding: 0; height: 100%;
+    font-family: Arial, sans-serif;
+    background: url('bgg.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background: rgba(0, 0, 0, 0.35);
+    font-style: italic;
+    font-weight: normal;
+}
+
+nav .logo {
+    display: flex;
+    align-items: center;
+}
+
+nav .logo img {
+    height: 30px;
+    width: 30px;
+    margin-right: 10px;
+}
+
+nav .logo-text {
+    font-weight: bold;
+    font-style: normal;
+    font-size: 18px;
+}
+.container {
+    width: 100%;
+    max-width: 400px;
+    margin: 200px auto 0;
+    text-align: center;
+    color: white;
+}
+
+.container h2 {
+    font-size: 28px;
+    margin-bottom: 30px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+/* Form */
+input {
+    width: 100%;
+    padding: 12px 18px;
+    border: none;
+    border-radius: 30px;
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 12px 28px;
+    border: none;
+    border-radius: 25px;
+    background-color: #00d5ff;
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #22e2ff;
+}
+
+/* Footer */
+footer {
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-size: 13px;
+    position: absolute;
+    bottom: 20px;
+}
