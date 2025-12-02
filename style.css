@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: url('b.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+}
+
+header {
+    width: 100%;
+    padding: 15px 40px;
+    background: rgba(0, 0, 0, 0.35);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-area {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.logo-text {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+nav a {
+    font-size: 16px;
+    text-decoration: none;
+    margin-left: 25px;
+    color: white;
+    font-weight: bold;
+}
+
+/* HERO */
+.hero {
+    height: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    backdrop-filter: blur(2px);
+}
+
+.hero-content {
+    max-width: 650px;
+}
+
+.hero h1 {
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 18px;
+    opacity: 0.9;
+}
+
+/* SERVICES */
+.services-section {
+    width: 90%;
+    margin: 50px auto;
+}
+
+.service-layer {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 60px;
+    background: rgba(0, 0, 0, 0.45);
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.service-layer.reverse {
+    flex-direction: row-reverse;
+}
+
+.service-layer img {
+    width: 45%;
+    height: 260px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.text-box h3 {
+    font-size: 26px;
+    margin-bottom: 10px;
+}
+
+/* CTA */
+.cta {
+    text-align: center;
+    background: rgba(0, 0, 0, 0.55);
+    width: 85%;
+    margin: 50px auto;
+    padding: 40px;
+    border-radius: 15px;
+}
+
+.cta p {
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+.cta button {
+    margin-top: 20px;
+    padding: 12px 35px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.btn-book {
+    background: #00eaff;
+    color: black;
+}
+
+.btn-apply {
+    background: orange;
+    color: white;
+    margin-left: 10px;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 15px;
+    background: rgba(0,0,0,0.45);
+    margin-top: 40px;
+}

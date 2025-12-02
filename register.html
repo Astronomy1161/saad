@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Register</title>
+<link rel="stylesheet" href="styles/register.css">
+</head>
+<body>
+  <nav>
+    <div class="logo">
+      <img src="logo.jpg" alt="BacRide Logo" />
+      <div class="logo-text">BacRide</div>
+    </div>
+    <ul>
+      <li><a href="about.html">ABOUT</a></li>
+      <li><a href="contact.html">CONTACT</a></li>
+      <li><a href="index.html">HOME</a></li>
+    </ul>
+  </nav>
+
+  <div class="container">
+    <form action="register.php" method="POST">
+      <div class="name-row">
+        <input type="text" name="firstname" placeholder="FIRSTNAME" required />
+        <input type="text" name="lastname" placeholder="LASTNAME" required />
+      </div>
+
+      <input type="email" name="email" pattern=".*\.com$" placeholder="EMAIL" required />
+      <input type="tel" name="contact" pattern="09[0-9]{9}" maxlength="11" placeholder="CONTACT NO." required />
+      <small style="color: #ffffff; margin-bottom: 1px; font-size: 0.60em;">
+      password must be at least 8 characters and uppercase letter, lowercase letter, and number.
+      </small>
+      <input type="password" name="password" placeholder="PASSWORD" 
+       required 
+       pattern="^(?=.*[A-Z])(?=.*[a-z])(?=.*\d).{8,}$"
+       title="Password must be at least 8 characters long and include a capital letter, lowercase letter, and a number." />
+
+      <input type="password" name="confirm_password" placeholder="CONFIRM PASSWORD" required />
+      <div class="login-text" style="text-align: center; margin-top: 15px; font-size: 13px;">
+    Already have an account? <a href="login.html" style="color: #00f9ff; font-weight: bold; text-decoration: none;">Login Here</a>
+  </div>
+
+      <button type="submit">REGISTER</button>
+    </form>
+  </div>
+
+  <footer>
+    @BacRide 2025. ALL RIGHTS RESERVED
+  </footer>
+</body>
+</html>
